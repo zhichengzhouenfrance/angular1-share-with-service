@@ -5,7 +5,7 @@ angular.module('myprojetApp')
 
             getEmissions().then(function(data) {
             		console.log(data);
-            	 	SharedDataService.product.name = data.statusText;
+            	 SharedDataService.product.name = data.statusText;
             	 	console.log(SharedDataService.product);
 
             });
